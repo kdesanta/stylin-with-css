@@ -3,9 +3,72 @@
 
 <head>
  
-  <meta name="viewport" 
-    <title>HTML Elements</title>
+    <meta name="viewport" content="width=device-width">
+    <title>Styl-With-CSS</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua&display=swap');
+      html{
+            background-color:#ccc;
+          }
+
+      body {
+             font-family:Arial,sans-serif;
+             background-color:#fff;
+             max-width:960px;
+             width:90%;
+             margin:auto;
+             padding:2%;       
+      }
+    .page-header{
+      background-color: powderblue;
+      text-align: center;
+      font-family: 'Inknut Antiqua',serif;
+      text-shadow: 4px 4px 4px #aaa;
+    }
+    /* start nav rules */
+    /* start nav rules */
+    nav{
+   text-align:center; /* centers the nav */
+}
+
+
+    nav a{
+   color:#000; /* font color is black */
+}
+
+
+    nav ul {
+   list-style:none; /* removes the bullets */
+}
+    nav li
+{
+   display:inline-block; /* makes <li> horizontal, but able to declare margins */
+   margin:0 2%; /* margin left-right, gets smaller as necessary */
+}
+   nav a:hover{
+   text-decoration: none; /* default underline goes away on hover */
+}
+/* end nav rules */
+
+    
+      footer {
+    text-align:center;
+    clear:both;
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       table.my-table {
          border-collapse: collapse;
        }
@@ -33,15 +96,28 @@
      table.my-table tr:nth-child(odd) {
        background-color: #ffffff;
      }
-
-    
+ 
+   footer {
+    text-align:center;
+    clear:both;
+   }
+      
   </style>
 </head>
 <body>
-  <h1>HTML Elements</h1>
-  <p>Clever content goes here</p>
-  <p>Clever content goes here</p>
-  <p>Clever content goes here</p>
+  <h1 class="page-header">Stylin' with CSS</h1>
+  <nav>
+    <ul>
+      <li><a href="#">Link 1</a></li>
+      <li><a href="#">Link 2</a></li>
+      <li><a href="#">Link 3</a></li>
+      <li><a href="#">Link 4</a></li>
+      <li><a href="#">Link 5</a></li>
+    </ul>
+  </nav>
+  <p>This page demonstrates how to create a look and feel on our pages using CSS.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   <div>
     <ul>
       <li>Cookies</li>
@@ -60,7 +136,7 @@
       <p> Here is how we use the <em>em</em> tag.</p>
       <p> Here is how we use the <i>italize</i> tag.</p>
       <p> Here is how we use the <b>strong</b> tag.</p>
-      <div>Here is inside the div.<span style="background-color: yellow;"> Here we are inside a span </span></div>
+      <div>Here is inside the div.<span style="background-color: purple;"> Here we are inside a span </span></div>
       <table class="my-table">
         <tr>
           <th>First Name</th>
@@ -83,6 +159,7 @@
          <td> Judy@example.com</td>
         </tr>
       </table>
+      <footer>Copyright &copy; 2024</footer>
   
 </body>
 
